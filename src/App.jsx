@@ -8,7 +8,7 @@ import TarjetaColor from '../components/TarjetaColor';
 
 const App = () => {
   
- const colorLocalStorage = JSON.parse(localStorage.getItem('colores') || [])
+ const colorLocalStorage = JSON.parse(localStorage.getItem('colores')) || []
   const [color, setColor] = useState()
  const [listaColores, setListaColores] =  useState(colorLocalStorage)
 
