@@ -1,4 +1,4 @@
-const URLColores = "http://localhost:4000/api/colores"
+const URLColores = import.meta.env.VITE_API_COLORES
 
 export const cargarColoresAPI = async ()=>{
     try {
