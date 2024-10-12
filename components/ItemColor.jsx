@@ -1,22 +1,22 @@
 import React from 'react';
 import { Card,Form,ListGroupItem,Button } from 'react-bootstrap';
 
-const ItemColor = ({color,borrarColor}) => {
+const ItemColor = ({listaColores,borrarAPI}) => {
     return (
         
 
-        <ListGroupItem className='w-25 d-flex'>
+        <ListGroupItem className='w-10'>
           
               
         <Card className='w-100'>
-        <Card.Img variant="top" style={{backgroundColor: color}} />
+        <Card.Img variant="top" style={{backgroundColor: listaColores.nombreColor, width: '21rem'}} />
         <Card.Body>
-          <Card.Title style={{color: color}}>COLOR: {color} </Card.Title>
-          <Form.Control as="textarea" placeholder="" style={{backgroundColor: color}} />
+          <Card.Title style={{color: listaColores.nombreColor}}>COLOR: {listaColores.nombreColor.toUpperCase()} </Card.Title>
+          <Form.Control as="textarea" placeholder="" style={{backgroundColor: listaColores.nombreColor}} />
           <Card.Text>
-            Esta es una tarjeta de color: {color}
+            Esta es una tarjeta de color: {listaColores.nombreColor}
           </Card.Text>
-          <Button className='btn-danger' onClick={()=>borrarColor(color)}>Borrar</Button>
+          <Button className='btn-danger' onClick={()=>borrarAPI(listaColores._id)}>Borrar</Button>
           
         </Card.Body>
       </Card>
