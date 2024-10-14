@@ -1,4 +1,4 @@
-# 🎨 Color Manager App
+# 🎨 Paleta de Colores
 
 ## 📄 Descripción
 
